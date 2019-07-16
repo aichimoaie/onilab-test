@@ -1,0 +1,22 @@
+.promotion-text-row {
+	padding: 15px 20px;
+	text-align: center;
+	background-color: #efcdce;
+	p {
+		display: block;
+		font-size: 1.4rem;
+		font-weight: 600;
+		line-height: 1;
+		margin: 0;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.promotion-text-row {
+		padding: 12px 20px;
+		p {
+			font-size: 1.1rem;
+		}
+
+	} 
+}

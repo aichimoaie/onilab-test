@@ -1,0 +1,93 @@
+@import "vars";
+@import "fonts";
+@import "_mixins/scrollbar";
+@import "libs";
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: $html_fz;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: $body_fz;
+	min-width: 320px;
+	position: relative;
+	line-height: $body_lh;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+	margin: 0;
+	padding: 0;
+}
+
+
+b, strong {
+	font-weight: bold;
+}
+
+button {
+	cursor: pointer;
+}
+
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 600;		
+}
+
+* a,
+a:hover {
+	color: #efcdce;
+}
+
+.btn {
+	&-white-bordered {
+		text-decoration: none;
+		color: inherit;
+		cursor: pointer;
+		display: inline-block;
+		background-color: #fff;
+		border: 1px solid #000;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		line-height: 1;
+		letter-spacing: 0em;
+		font-weight: 700;
+		padding: 12px 25px;
+		box-shadow: 0 0 10px 0 rgba(#000, 0.1);
+	}
+}
+
+
+
+
+@import "components/header";
+@import "components/search-el";
+@import "components/shop-actions";
+@import "components/lang-switcher";
+@import "components/promotions-list";
+@import "components/promotion-banner";
+@import "components/promotion-text-row";
+@import "components/categories-1";
+@import "components/categories-2";
+@import "components/allowed-payment-list";
+@import "components/social-links-list";
+@import "components/footer";
+@import "components/footer-widgets";
+@import "components/categorised-list";
+@import "media"; // Always at the end

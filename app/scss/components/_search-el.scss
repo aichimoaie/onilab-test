@@ -1,0 +1,26 @@
+.search-el {
+	button {
+		border: none;
+		background-color: transparent;
+	}
+}
+
+
+@media screen and (min-width: 990px) {
+	.search-el {
+		&__toggle-mob {
+			display: none;
+		}
+		input[type="search"] {
+			border: 1px solid #999999;
+			padding: 0 10px;
+			border-radius: 2px;
+			&::placeholder {
+				text-transform: uppercase;
+			} 
+			&::-webkit-search-cancel-button {
+				display: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,64 @@
+.promotions-list {
+	display: block;
+	max-width: 100%;
+	background-color: #f8e1e2;
+	padding: 10px 0;
+	a {
+		display: block;
+		color: inherit;
+		text-decoration: none;
+		text-align: center;
+	}
+	&__title {
+		display: block;
+		font-size: 1.6rem;
+		font-weight: 600;
+		line-height: 1;
+	}
+}
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.promotions-list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem 5.5rem;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.promotions-list {
+		justify-content: space-around;
+		&__title {
+			font-size: 1.1rem;
+		}
+		&__text {
+			font-size: 0.9rem;
+		}
+	}
+}
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1480px) {
+	.promotions-list {
+		padding: 1rem 0;
+	}
+}

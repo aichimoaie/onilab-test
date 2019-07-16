@@ -1,0 +1,38 @@
+.promotion-banner {
+	position: relative;
+	overflow: hidden;
+	a {
+		display: block;
+		color: inherit;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		height: 275px;
+		object-fit: cover;
+	}
+	&__cta-text {
+		position: absolute;
+		left: 50%;
+		bottom: 20px;
+		display: inline-block;
+		transform: translateX(-50%);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.promotion-banner {
+		img {
+			height: auto;
+		}
+	}
+}
+@media screen and (min-width: 1200px) {
+	.promotion-banner {
+		&__cta-text {
+			bottom: 5rem;
+			font-size: 2rem;
+			padding: 1.6rem 4.3rem;
+		}
+	}
+} 

@@ -1,0 +1,23 @@
+.allowed-payment-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	img {
+		width: 38px;
+		height: 24px;
+		border: 1px solid #ececec;
+		border-radius: 4px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.allowed-payment-list {
+		img {
+			width: 3rem;
+			height: 1.8rem;
+		}
+	}
+}
